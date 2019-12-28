@@ -8,7 +8,7 @@ const message2 = document.getElementById('message-2');
 weatherForm.addEventListener('submit',(event)=>{
 	event.preventDefault();//prevent the browser to refresh automatically
 	const location = search.value;
-	const url = 'http://localhost:3000/weather?address=' + location;
+	const url = '/weather?address=' + location;
 
 	message1.innerHTML = 'Loading...';
 	message2.innerHTML = '';
