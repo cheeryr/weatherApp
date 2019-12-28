@@ -1,0 +1,14 @@
+html
+    head
+        title 404
+        link(rel='icon',href='/img/weather.png')
+        link(rel='stylesheet',href='/css/styles.css')       	
+    body
+        div(class='main-content')
+            include ../partials/header
+
+            p #{errorMessage}
+            
+        include ../partials/footer
+        script(src='/js/app.js')
+
